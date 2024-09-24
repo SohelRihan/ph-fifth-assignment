@@ -44,9 +44,9 @@
         <div class="mt-20">
             <div class="join grid grid-cols-2 lg:w-1/6 mx-auto gap-2">
                 <button
-                    class="btn glass hover:bg-lime-400 font-semibold text-xl border border-[#1111114D]">Donation</button>
+                   id="donation-btn" class="btn glass hover:bg-lime-400 font-semibold text-xl border border-[#1111114D]">Donation</button>
                 <button
-                    class="btn glass hover:bg-lime-400 font-semibold text-xl border border-indigo-600">History</button>
+                   id="history-btn" class="btn glass hover:bg-lime-400 font-semibold text-xl border border-indigo-600">History</button>
 
 
             </div>
@@ -54,7 +54,7 @@
     </nav>
     <main>
         <!-- Donation section start -->
-        <section class="mt-10">
+        <section id="donation-part" class="mt-10">
             <!-- section noakhali -->
             <div class="card lg:card-side bg-base-100 shadow-xl w-4/6 mx-auto">
                 <figure>
@@ -129,8 +129,19 @@
             </div>
         </section>
         <!-- Donation section end -->
+
+        <!-- History section start -->
+         <div id="history-part" class="hidden">
+            <h1 class="text-lg text-center">History</h1>
+            <div id="history-container">
+
+            </div>
+         </div>
+         <!-- History section End -->
+
         <script src="js/feature.js"></script>
         <script src="js/donation.js"></script>
+        <script src="js/utility.js"></script>
 
     </main>
 </body>

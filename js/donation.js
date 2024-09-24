@@ -14,6 +14,12 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
 
         document.getElementById('main-balance').innerText = aboveMainBalance;
 
+        // Donation History
+        // const p = document.createElement('p');
+        // p.innerText = `Added: ${addDonationNoakhali} Taka is Donated for Flood Relief in Noakhali,Bangladesh`;
+        // console.log(p);
+
+        // document.getElementById('history-container').appendChild(p);
 
     }
     else {

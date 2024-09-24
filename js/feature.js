@@ -17,3 +17,12 @@ function getBalanceById(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 };
+
+// click part
+
+function showDonationById(id){
+    document.getElementById('donation-part').classList.add('hidden');
+    document.getElementById('history-part').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+};
