@@ -26,15 +26,15 @@
 </head>
 
 <body class="lexend-font">
-    <nav>
-        <div class="navbar bg-base-100 flex justify-around bg-orange-50">
+    <nav class=" bg-white sticky top-0 z-50">
+        <div class="navbar bg-base-100 flex justify-between lg:justify-around bg-orange-50">
             <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
-            <button class="btn btn-accent bg-[#ABEF5F] border-none font-semibold text-xl">Blog</button>
-            <div class="gap-2 font-semibold text-xl">
+            <button class="btn btn-accent bg-[#ABEF5F] border-none font-semibold sm:text-lg lg:text-xl">Blog</button>
+            <div class="gap-2 font-semibold sm:text-lg lg:text-xl">
                 <img src="assets/logo.png" alt="">
                 <h3>Donate Bangladesh</h3>
             </div>
-            <div class="gap-2 font-medium text-xl">
+            <div class="gap-2 font-medium sm:text-lg lg:text-xl">
                 <img src="assets/coin.png" alt="">
                 <h3>5500 BDT</h3>
             </div>
@@ -66,7 +66,7 @@
                         <h6 class="text-small bg-gray-100">0 BDT</h6>
                     </div> -->
                     <div class="lg:w-1/5">
-                        <button class="btn text-small font-normal"><img src="assets/coin.png" alt="">0 BDT</button>
+                        <button class="btn text-small font-normal"><img src="assets/coin.png" alt=""><p id="noakhali-donation-add">500 BDT</p></button>
                     </div>
 
                     <h2 class="card-title font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -74,10 +74,10 @@
                         In 2024, Noakhali, Bangladesh, faced severe flooding, impacting thousands of lives. The ultimate
                         goal of donations is to provide immediate relief, such as food, clean water, and medical
                         assistance, as well as long-term recovery efforts.</p>
-                    <input type="text" placeholder="Write Donation Amount"
+                    <input id="input-noakhali" type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full max-w-xs" />
                     <div class="card-actions justify-center">
-                        <button class="btn bg-lime-400 font-semibold text-xl">Donate Now</button>
+                        <button id="btn-noakhali" class="btn bg-lime-400 font-semibold text-xl">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -89,16 +89,18 @@
                 </figure>
                 <div class="card-body">
                     <div class="lg:w-1/5">
-                        <button class="btn text-small font-normal"><img src="assets/coin.png" alt="">0 BDT</button>
+                        <button class="btn text-small font-normal"><img src="assets/coin.png" alt=""><p>500 BDT</p></button>
                     </div>
 
                     <h2 class="card-title font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class="font-light text-xs">
-                        In 2024, Feni, Bangladesh, has been heavily impacted by floods, with many families suffering from loss of shelter and resources. Donations are vital for delivering urgent relief supplies, including food, clean drinking water, and medical care.</p>
+                        In 2024, Feni, Bangladesh, has been heavily impacted by floods, with many families suffering
+                        from loss of shelter and resources. Donations are vital for delivering urgent relief supplies,
+                        including food, clean drinking water, and medical care.</p>
                     <input type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full max-w-xs" />
                     <div class="card-actions justify-center">
-                        <button class="btn bg-lime-400 font-semibold text-xl">Donate Now</button>
+                        <button id="btn-feni" class="btn bg-lime-400 font-semibold text-xl">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -110,21 +112,26 @@
                 </figure>
                 <div class="card-body">
                     <div class="lg:w-1/5">
-                        <button class="btn text-small font-normal"><img src="assets/coin.png" alt="">0 BDT</button>
+                        <button class="btn text-small font-normal"><img src="assets/coin.png" alt=""><p>500 BDT</p></button>
                     </div>
 
                     <h2 class="card-title font-bold text-xl">Aid for Injured in the Quota Movement</h2>
                     <p class="font-light text-xs">
-                        The Quota Movement in 2024 has led to significant protests in Bangladesh, resulting in injuries among participants. Aid for the injured focuses on providing medical assistance, including treatment for wounds and psychological support. </p>
+                        The Quota Movement in 2024 has led to significant protests in Bangladesh, resulting in injuries
+                        among participants. Aid for the injured focuses on providing medical assistance, including
+                        treatment for wounds and psychological support. </p>
                     <input type="text" placeholder="Write Donation Amount"
                         class="input input-bordered w-full max-w-xs" />
                     <div class="card-actions justify-center">
-                        <button class="btn bg-lime-400 font-semibold text-xl">Donate Now</button>
+                        <button id="btn-quota" class="btn bg-lime-400 font-semibold text-xl">Donate Now</button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Donation section end -->
+        <script src="js/feature.js"></script>
+        <script src="js/donation.js"></script>
+
     </main>
 </body>
 
