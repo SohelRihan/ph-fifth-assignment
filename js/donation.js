@@ -3,7 +3,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
 
     const addDonationNoakhali = getMoneyById('input-noakhali');
 
-    if(isNaN(addDonationNoakhali)){
+    if (isNaN(addDonationNoakhali)) {
         alert('Please insert number!');
         return;
     }
@@ -16,7 +16,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
 
         const mainBalance = getTotalBalanceById('main-balance');
 
-        if(addDonationNoakhali > mainBalance){
+        if (addDonationNoakhali > mainBalance) {
             alert('You do not have enough money to donation!');
             return;
         }
@@ -24,7 +24,12 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
 
         document.getElementById('main-balance').innerText = aboveMainBalance;
 
-        // Donation History
+        // modal
+        document.getElementById('btn-noakhali').addEventListener('click', function() {
+            document.getElementById('my_modal_1').checked = true;
+        });
+
+        // Noakhali Donation History
         const currentDate = new Date();
         const div = document.createElement('div');
         div.classList.add('bg-gray-100');
@@ -34,7 +39,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
         `
         document.getElementById('history-container').appendChild(div);
     }
-    else {
+    else{
         alert('Failed to Donation!');
     }
 });
@@ -45,7 +50,7 @@ document.getElementById('btn-feni').addEventListener('click', function () {
 
     const addDonationFeni = getMoneyById('input-feni');
 
-    if(isNaN(addDonationFeni)){
+    if (isNaN(addDonationFeni)) {
         alert('Please insert number!');
         return;
     }
@@ -58,7 +63,7 @@ document.getElementById('btn-feni').addEventListener('click', function () {
 
         const mainBalance = getTotalBalanceById('main-balance');
 
-        if(addDonationFeni > mainBalance){
+        if (addDonationFeni > mainBalance) {
             alert('You do not have enough money to donation!');
             return;
         }
@@ -66,7 +71,12 @@ document.getElementById('btn-feni').addEventListener('click', function () {
 
         document.getElementById('main-balance').innerText = aboveMainBalance;
 
-        // Feni History
+        // modal
+        document.getElementById('btn-feni').addEventListener('click', function() {
+            document.getElementById('my_modal_1').checked = true;
+        });
+
+        // Feni Donation History
         const currentDate = new Date();
         const div = document.createElement('div');
         div.classList.add('bg-gray-100');
@@ -89,7 +99,7 @@ document.getElementById('btn-quota').addEventListener('click', function () {
 
     const addDonationQuota = getMoneyById('input-quota');
 
-    if(isNaN(addDonationQuota)){
+    if (isNaN(addDonationQuota)) {
         alert('Please insert number!');
         return;
     }
@@ -102,7 +112,7 @@ document.getElementById('btn-quota').addEventListener('click', function () {
 
         const mainBalance = getTotalBalanceById('main-balance');
 
-        if(addDonationQuota > mainBalance){
+        if (addDonationQuota > mainBalance) {
             alert('You do not have enough money to donation!');
             return;
         }
@@ -110,7 +120,12 @@ document.getElementById('btn-quota').addEventListener('click', function () {
 
         document.getElementById('main-balance').innerText = aboveMainBalance;
 
-        // Quota History
+         // modal
+         document.getElementById('btn-quota').addEventListener('click', function() {
+            document.getElementById('my_modal_1').checked = true;
+        });
+
+        // Quota Donation History
         const currentDate = new Date();
         const div = document.createElement('div');
         div.classList.add('bg-gray-100');
