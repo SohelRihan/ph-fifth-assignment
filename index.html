@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH Fifth Assignment</title>
+
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            /* font-weight: <weight>; */
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="lexend-font">
+    <nav>
+        <div class="navbar bg-base-100 flex justify-around bg-orange-50">
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+            <button class="btn btn-accent bg-[#ABEF5F] border-none font-semibold text-xl">Blog</button>
+            <div class="gap-2 font-semibold text-xl">
+                <img src="assets/logo.png" alt="">
+                <h3>Donate Bangladesh</h3>
+            </div>
+            <div class="gap-2 font-medium text-xl">
+                <img src="assets/coin.png" alt="">
+                <h3>5500 BDT</h3>
+            </div>
+          </div>
+          <!-- hover buttons -->
+          <div class="mt-20">
+            <div class="join grid grid-cols-2 w-1/6 mx-auto gap-2">
+                <button class="btn glass hover:bg-lime-400 font-semibold text-xl border border-[#1111114D]">Donation</button>
+                <button class="btn glass hover:bg-lime-400 font-semibold text-xl border border-indigo-600">History</button>
+                
+                
+              </div>
+          </div>
+    </nav>
+    <main></main>
 </body>
+
 </html>
