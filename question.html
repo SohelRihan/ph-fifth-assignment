@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Part</title>
+     <!-- daisy ui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+ 
+     <!-- google font cdn -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+ 
+     <style>
+         .lexend-font {
+             font-family: "Lexend", sans-serif;
+             font-optical-sizing: auto;
+             /* font-weight: <weight>; */
+             font-style: normal;
+         }
+     </style>
+</head>
+<body>
+    <nav class=" bg-white sticky top-0 z-50">
+        <div class="navbar bg-base-100 flex justify-between lg:justify-around bg-orange-50">
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+            <button id="question-btn" class="btn btn-accent bg-[#ABEF5F] border-none font-semibold sm:text-lg lg:text-xl">Home</button>
+            <div class="gap-2 font-semibold sm:text-lg lg:text-xl">
+                <img src="assets/logo.png" alt="">
+                <h3>Donate Bangladesh</h3>
+            </div>
+            <div class="gap-2 font-medium sm:text-lg lg:text-xl">
+                <img src="assets/coin.png" alt="">
+                <h3 id="main-balance" class="text-sm font-medium">5500 BDT</h3>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                <div class="collapse-content">
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
+        </section>
+        <script src="js/feature.js"></script>
+        <script src="js/utility.js"></script>
+    </main>
+    
+</body>
+</html>

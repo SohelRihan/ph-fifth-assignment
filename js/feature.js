@@ -26,3 +26,7 @@ function showDonationById(id){
 
     document.getElementById(id).classList.remove('hidden');
 };
+
+document.getElementById('question-btn').addEventListener('click', function(){
+    window.location.href = 'index.html';
+});
