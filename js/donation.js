@@ -34,7 +34,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function () {
         const div = document.createElement('div');
         div.classList.add('bg-lime-100');
         div.innerHTML = `
-        <h4 class="text-sm font-bold mb-2 pt-5 px-2">${addDonationNoakhali} Taka is Donated for Flood Relief in Noakhali,Bangladesh</h4>
+        <h4 class="text-sm font-bold mb-2 pt-5 px-2">${addDonationNoakhali} Taka is Donated for Flood at Noakhali, Bangladesh</h4>
         <p class="pb-2 px-2">${currentDate}</p>
         `
         document.getElementById('history-container').appendChild(div);
@@ -82,7 +82,7 @@ document.getElementById('btn-feni').addEventListener('click', function () {
         const div = document.createElement('div');
         div.classList.add('bg-red-100');
         div.innerHTML = `
-        <h4 class="text-sm font-bold mb-2 pt-5 px-2">${addDonationFeni} Taka is Donated for Flood Relief in Feni,Bangladesh</h4>
+        <h4 class="text-sm font-bold mb-2 pt-5 px-2">${addDonationFeni} Taka is Donated for Flood Relief in Feni, Bangladesh</h4>
         <p class="pb-2 px-2">${currentDate}</p>
         `
         document.getElementById('history-container').appendChild(div);
